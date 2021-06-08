@@ -45,7 +45,7 @@ let questions = [
       "Statement Question Language",
       "Structured Query Language"
     ]
-  };
+  }
   //u gotta add event listener for the stuff and then you have to add the stuff in htere
 //add a function with startgame
 //add a function eith next question
