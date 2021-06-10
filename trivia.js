@@ -16,23 +16,27 @@ const submit=document.querySelector('#submit');
 
 const quizDB=[
   {
-    question:'hello how are you ',
-    a: 'hello',
-    b: 'dkhfldkhf',
-    c: 'dhjdd',
-    ans: 'ans4'
+    question: " Q1: Who invented JavaScript?",
+    a: 'Douglas Crockford',
+    b: 'Brendan Eich',
+    c: 'Sheryl Sandberg',
+    d: "Bills Gates",
+    ans: 'ans2'
   },
   {
-    question:'this is second question ',
-    a: 'hello',
-    b: 'dkhfldkhf',
-    c: 'dhjdd',
+    question:'Q2 : What does CSS stand for?',
+    a: 'Cascading Style Sheet',
+    b: 'ColorFul Style Sheet',
+    c: 'Esin Style Sheet',
+    d:"Common Style Sheet",
     ans: 'ans1'
   },
 ]
 
 const answers=document.querySelectorAll('.answer');
 //console.log(answers);
+
+const showscore=document.querySelector('#showscore');
 
 let questioncount=0;
 let score=0;
@@ -72,5 +76,10 @@ loadQuestion();
   questioncount++;
   if(questioncount<quizDB.length){
     loadQuestion();
+  }else{
+     showscore.innerHTML=`
+     <h3> You Scored ${score}/${quizDB.length} </h3>
+     <button class='btn' onclick="location.reload()"> Play Again</button>
+     `
   }
 })
