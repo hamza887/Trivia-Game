@@ -35,9 +35,18 @@ const quizDB=[
   },
 ]
 
+let questioncount=0;
+
+
 const loadQuestion=()=>{
-    console.log(quizDB[0].question);
-   question.innerText=quizDB[0].question  
+     // console.log(quizDB[0].question);
+
+    const questionlist= quizDB[questioncount]
+   question.innerText=questionlist.question;
+    option1.innerText=questionlist.a;
+    option2.innerText=questionlist.b;
+    option3.innerText=questionlist.c;
+    option4.innerText=questionlist.d;
    
 }
 loadQuestion();
