@@ -17,3 +17,20 @@ const submit=document.querySelector('#submit');
 // console.log(question);
 // console.log(option3);
 // console.log(submit)
+
+const quizDB=[
+  {
+    question:'hello how are you ',
+    a: 'hello',
+    b: 'dkhfldkhf',
+    c: 'dhjdd',
+    ans: 'ans4'
+  },
+  {
+    question:'this is second question ',
+    a: 'hello',
+    b: 'dkhfldkhf',
+    c: 'dhjdd',
+    ans: 'ans1'
+  },
+]
