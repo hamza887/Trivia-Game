@@ -35,6 +35,7 @@ const answers=document.querySelectorAll('.answer');
 //console.log(answers);
 
 let questioncount=0;
+let score=0;
 
 
 const loadQuestion=()=>{
@@ -61,7 +62,15 @@ loadQuestion();
 
  }
 
-submit.addEventListener('click',()=>{
-     const checkedanswer= getcheckanswer();
-     console.log(checkedanswer);
+ submit.addEventListener('click',()=>{
+  const checkedanswer= getcheckanswer();
+  console.log(checkedanswer);
+
+  if(checkedanswer===quizDB[quetioncount].ans){
+    score++;
+  };
+  questioncount++;
+  if(quetsioncount<quizDB.length){
+    loadQuestion();
+  }
 })
