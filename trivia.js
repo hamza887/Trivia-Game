@@ -104,7 +104,7 @@ loadQuestion();
   }else{
      showscore.innerHTML=`
      <h3> You Scored ${score}/${quizDB.length} </h3>
-     <button class='btn' onclick="location.reload()"> Play Again</button>
+     <button class='btn btn-primary' onclick="location.reload()"> Play Again</button>
      `}
      const scoredisplay=document.getElementById('scoredisplay');
  scoredisplay.innerHTML=`Your Score is ${score}`;
