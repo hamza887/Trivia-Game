@@ -1,0 +1,14 @@
+body {
+    font-family: "Sofia", sans-serif;
+    background-image: url(https://c8.alamy.com/comp/R0AT2Y/torn-blue-paper-revealing-question-mark-on-yellow-paper-concept-of-questions-faq-qa-problem-riddle-and-quiz-background-R0AT2Y.jpg);
+  }
+.upper-div{
+    
+    padding: 100px;
+  text-align: center;
+}
+h1{
+    font-style: italic;
+    text-align: center;
+
+}
