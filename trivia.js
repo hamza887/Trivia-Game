@@ -32,7 +32,7 @@ const quizDB=[
     ans: 'ans1'
   },
   {
-    question:'Q2 : Which one of these are a Javascript package Manager?',
+    question:'Q3 : Which one of these are a Javascript package Manager?',
     a: 'TypeScript',
     b: 'Node.js',
     c: 'npm',
@@ -40,7 +40,7 @@ const quizDB=[
     ans: 'ans3'
   },
   {
-    question:'Q2 : What does SQL stand for?',
+    question:'Q4 : What does SQL stand for?',
     a: "Stylish Question Language",
      b: "Stylesheet Query Language",
      c: "Statement Question Language",
@@ -48,7 +48,7 @@ const quizDB=[
     ans: 'ans4'
   },
   {
-    question:'Q2 : Who is your fav Instructor in General Asembly?',
+    question:'Q5 : Who is your fav Instructor in General Asembly?',
     a: 'Esin Angel',
     b: 'Madeline O Moore',
     c: 'Doug Leinen',
@@ -105,7 +105,12 @@ loadQuestion();
      showscore.innerHTML=`
      <h3> You Scored ${score}/${quizDB.length} </h3>
      <button class='btn' onclick="location.reload()"> Play Again</button>
-
-     `
-  }
+     `}
+     const scoredisplay=document.getElementById('scoredisplay');
+ scoredisplay.innerHTML=`Your Score is ${score}`;
+  
 })
+
+// const scoremee=document.getElementById('scoremee');
+//  scoremee.innerHTML=`Your Score is ${score}`
+//  scoremee++;
