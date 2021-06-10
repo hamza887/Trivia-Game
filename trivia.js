@@ -13,14 +13,7 @@ const submit=document.querySelector('#submit');
 // console.log(question);
 // console.log(option3);
 // console.log(submit)
-
- const startButton=document.getElementById('startbutton');
- startButton.addEventListener('click',()=>{
-        const startthegame=document.getElementById('startme');
-        startthegame.innerHTML=`<h2> Lets Start the Game Down there </h2>`
-        startthegame.style.color='red'
-})
-
+   
 const quizDB=[
   {
     question: " Q1: Who invented JavaScript?",
@@ -63,6 +56,13 @@ const quizDB=[
     ans: 'ans1'
   },
 ]
+
+ const startButton=document.getElementById('startbutton');
+ startButton.addEventListener('click',()=>{
+        const startthegame=document.getElementById('startme');
+        startthegame.innerHTML=`<h2> Lets Start the Game Down there </h2>`
+        startthegame.style.color='red'
+ })
 
 const answers=document.querySelectorAll('.answer');
 //console.log(answers);
@@ -120,6 +120,4 @@ loadQuestion();
   
 })
 
-// const scoremee=document.getElementById('scoremee');
-//  scoremee.innerHTML=`Your Score is ${score}`
-//  scoremee++;
+
