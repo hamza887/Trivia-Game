@@ -16,9 +16,7 @@ h1{
 .form-label{
     font-size: 25px;
 }
-.form-label: hover{
-    color: red;
-}
+
 ul {
     list-style-type: none;
     margin: 0;
