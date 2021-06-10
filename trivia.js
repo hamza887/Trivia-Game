@@ -49,7 +49,7 @@ const quizDB=[
   },
   {
     question:'Q5 : Who is your fav Instructor in General Asembly?',
-    a: 'Esin Angel',
+    a: 'Esin Saribudak',
     b: 'Madeline O Moore',
     c: 'Doug Leinen',
     d:"Mathilda",
