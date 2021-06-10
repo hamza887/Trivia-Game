@@ -12,3 +12,10 @@ h1{
     text-align: center;
 
 }
+.form-label{
+    font-size: 25px;
+}
+.form-label: hover{
+    color: red;
+}
+
