@@ -31,12 +31,37 @@ const quizDB=[
     d:"Common Style Sheet",
     ans: 'ans1'
   },
+  {
+    question:'Q2 : Which one of these are a Javascript package Manager?',
+    a: 'TypeScript',
+    b: 'Node.js',
+    c: 'npm',
+    d:"COD",
+    ans: 'ans3'
+  },
+  {
+    question:'Q2 : What does SQL stand for?',
+    a: "Stylish Question Language",
+     b: "Stylesheet Query Language",
+     c: "Statement Question Language",
+     d: "Structured Query Language",
+    ans: 'ans4'
+  },
+  {
+    question:'Q2 : Who is your fav Instructor in General Asembly?',
+    a: 'Esin Angel',
+    b: 'Madeline O Moore',
+    c: 'Doug Leinen',
+    d:"Mathilda",
+    ans: 'ans1'
+  },
 ]
 
 const answers=document.querySelectorAll('.answer');
 //console.log(answers);
 
 const showscore=document.querySelector('#showscore');
+console.log(showscore);
 
 let questioncount=0;
 let score=0;
@@ -80,6 +105,7 @@ loadQuestion();
      showscore.innerHTML=`
      <h3> You Scored ${score}/${quizDB.length} </h3>
      <button class='btn' onclick="location.reload()"> Play Again</button>
+
      `
   }
 })
