@@ -66,11 +66,11 @@ loadQuestion();
   const checkedanswer= getcheckanswer();
   console.log(checkedanswer);
 
-  if(checkedanswer===quizDB[quetioncount].ans){
+  if(checkedanswer===quizDB[questioncount].ans){
     score++;
   };
   questioncount++;
-  if(quetsioncount<quizDB.length){
+  if(questioncount<quizDB.length){
     loadQuestion();
   }
 })
