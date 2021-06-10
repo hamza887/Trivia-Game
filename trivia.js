@@ -9,11 +9,6 @@ const option4=document.querySelector('#option4');
 
 const submit=document.querySelector('#submit');
 
-
-// console.log(question);
-// console.log(option3);
-// console.log(submit)
-   
 const quizDB=[
   {
     question: " Q1: Who invented JavaScript?",
@@ -65,8 +60,6 @@ const quizDB=[
  })
 
 const answers=document.querySelectorAll('.answer');
-//console.log(answers);
-
 const showscore=document.querySelector('#showscore');
 console.log(showscore);
 
@@ -75,8 +68,6 @@ let score=0;
 
 
 const loadQuestion=()=>{
-     // console.log(quizDB[0].question);
-
     const questionlist= quizDB[questioncount]
    question.innerText=questionlist.question;
     option1.innerText=questionlist.a;
