@@ -100,15 +100,26 @@ loadQuestion();
   if(questioncount<quizDB.length){
     loadQuestion();
   }else{
-     showscore.innerHTML=`
-     <h3> You Scored ${score}/${quizDB.length} </h3>
-     <h1> YOU LOSE </h1>
-     <button class='btn btn-primary' onclick="location.reload()"> Play Again</button>
-     `}
+    gameOver();
+  }
    
      const scoredisplay=document.getElementById('scoredisplay');
  scoredisplay.innerHTML=`Your Score is ${score}`;
   
 })
+
+const gameOver=()=>{
+   let winconditon;
+   if(score>3){
+     winconditon="YOU WIN";
+   }else{
+     winconditon="YOU LOSE";
+   }
+   showscore.innerHTML=`
+   <h3> You Scored ${score}/${quizDB.length} </h3>
+   <h1> ${winconditon} </h1>
+   <button class='btn btn-primary' onclick="location.reload()"> Play Again</button>
+   `
+}
 
 
