@@ -34,3 +34,10 @@ const quizDB=[
     ans: 'ans1'
   },
 ]
+
+const loadQuestion=()=>{
+    console.log(quizDB[0].question);
+   question.innerText=quizDB[0].question  
+   
+}
+loadQuestion();
