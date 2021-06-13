@@ -117,7 +117,7 @@ const gameOver=()=>{
    }
    showscore.innerHTML=`
    <h3> You Scored ${score}/${quizDB.length} </h3>
-   <h1> ${winconditon} </h1>
+   <h1 style="color:red"> ${winconditon} </h1>
    <button class='btn btn-primary' onclick="location.reload()"> Play Again</button>
    `
 }
