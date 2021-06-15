@@ -122,6 +122,7 @@ const gameOver=()=>{
    <h1 > ${winconditon} </h1>
    <button class='btn btn-primary' onclick="location.reload()"> Play Again</button>
    `
+   
 }
 
 
