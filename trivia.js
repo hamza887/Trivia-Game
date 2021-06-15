@@ -112,12 +112,14 @@ const gameOver=()=>{
    let winconditon;
    if(score>3){
      winconditon="YOU WIN";
+     showscore.style.color='green'
    }else{
      winconditon="YOU LOSE";
+     showscore.style.color='red';
    }
    showscore.innerHTML=`
    <h3> You Scored ${score}/${quizDB.length} </h3>
-   <h1 style="color:red"> ${winconditon} </h1>
+   <h1 > ${winconditon} </h1>
    <button class='btn btn-primary' onclick="location.reload()"> Play Again</button>
    `
 }
