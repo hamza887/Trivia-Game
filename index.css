@@ -4,9 +4,17 @@ body {
     text-align: center;
 }
 .upper-div{
-    
     padding: 100px;
   text-align: center;
+}
+.main-div{
+    background-color: beige;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    box-shadow: 0 1px 1px #cccccc;
+
 }
 h1{
     font-style: italic;
@@ -21,5 +29,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+
   }
 
